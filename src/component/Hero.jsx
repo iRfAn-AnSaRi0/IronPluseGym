@@ -1,14 +1,16 @@
-
-
 import React from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
+    // <section
+    //   id="home"
+    //   className="relative min-h-screen flex items-center justify-center text-center px-4 sm:px-6 overflow-hidden"
+    // >
     <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center text-center px-4 sm:px-6 overflow-hidden"
-    >
+  id="home"
+  className="relative min-h-[85vh] sm:min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 overflow-hidden"
+>
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center scale-105 animate-[slowZoom_20s_linear_infinite]"
@@ -26,7 +28,8 @@ const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative z-10 max-w-5xl w-full"
+        // className="relative z-10 max-w-5xl w-full"
+        className="relative z-10 max-w-5xl w-full py-16 sm:py-0"
       >
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 sm:mb-6">
@@ -61,9 +64,10 @@ const Hero = () => {
       </motion.div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-gray-400 text-xs sm:text-sm">
+       {/* <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-gray-400 text-xs sm:text-sm">
         Scroll Down ↓
-      </div>
+      </div>  */}
+      <div className="hidden sm:block absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-gray-400 text-sm">  Scroll Down ↓ </div>
     </section>
   );
 };
