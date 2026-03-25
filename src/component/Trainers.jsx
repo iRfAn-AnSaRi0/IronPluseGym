@@ -14,7 +14,7 @@ const trainers = [
    img: "https://images.unsplash.com/photo-1603287681836-b174ce5074c2?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Priya Singh",
+    name: "Afzal Jamal",
     role: "Personal Trainer",
     img: "https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&w=800&q=80",
   },
